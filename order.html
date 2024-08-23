@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - My Mobile Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="order">
+            <h1>Order Your Product</h1>
+            <p>Fill out the form below to place your order. We offer a variety of payment methods to make your purchase easy and convenient.</p>
+            
+            <form action="submit_order.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="product">Product:</label>
+                <select id="product" name="product" required>
+                    <option value="product1">Product 1</option>
+                    <option value="product2">Product 2</option>
+                    <option value="product3">Product 3</option>
+                </select>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                
+                <label for="address">Shipping Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+                
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+        <section class="payment-methods">
+            <h2>Payment Methods</h2>
+            <p>We accept a variety of payment methods to ensure a smooth and secure transaction:</p>
+            <div class="payment-buttons">
+                <button class="payment-button">Credit/Debit Card</button>
+                <button class="payment-button">PayPal</button>
+                <button class="payment-button">Bank Transfer</button>
+                <button class="payment-button">Cash on Delivery</button>
+            </div>
+            <p>If you have any questions about payment methods, please <a href="contact.html">contact us</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 My Mobile Site. All rights reserved.</p>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
